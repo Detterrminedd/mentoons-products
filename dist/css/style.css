@@ -19,9 +19,9 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../spider.jpeg);
+  background: url("../spider.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: 55% center;
   width: 100%;
   height: 100vh;
   z-index: -1;
@@ -31,6 +31,17 @@ a {
 .logo {
   color: white;
   font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header svg {
+  width: 2.3em;
+  margin-top: -0.6em;
+  cursor: pointer;
 }
 
 .subhead {
@@ -77,6 +88,8 @@ section.hero .down-arrow path {
 
 .top-books {
   font-family: sans-serif;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .wrapper1 {
@@ -177,6 +190,9 @@ section.hero .down-arrow path {
     margin: 1.5em 5em;
     font-family: "Poppins", sans-serif;
   }
+  .wrapper {
+    height: 100vh;
+  }
   .wrapper h1 {
     font-size: 3rem;
     margin-top: 2em;
@@ -200,7 +216,7 @@ section.hero .down-arrow path {
     left: unset;
     right: 0;
     width: 50%;
-    height: 42em;
+    height: 100vh;
   }
   .logo {
     color: black;
@@ -216,7 +232,6 @@ section.hero .down-arrow path {
   }
   section.hero .subhead {
     margin-bottom: 3em;
-    margin-top: 1em;
   }
   section.hero svg.down-arrow {
     stroke: black;
@@ -238,6 +253,7 @@ section.hero .down-arrow path {
 @media only screen and (min-width: 1200px) {
   .wrapper {
     width: 1200px;
+    height: 100vh;
     margin: 0 auto;
   }
   .feature {
